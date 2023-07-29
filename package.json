@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "entregas_backend_ch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon clase_6/src/app.js"
+  },
+  "author": "confaa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
