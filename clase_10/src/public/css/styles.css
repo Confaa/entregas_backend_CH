@@ -1,0 +1,27 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+input, button{
+    padding: .75rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+}
+table{
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+th, td{
+    border: 1px solid white;
+    padding: .5rem;
+}

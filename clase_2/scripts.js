@@ -47,19 +47,19 @@ let p1 = new ProductManager();
 
 console.log(p1.getProducts());
 
-let product={
+let product = {
   title: "producto prueba",
   description: "Este es un producto prueba",
   price: 200,
   thumbnail: "Sin imagen",
   code: "abc123",
   stock: 25,
-}
+};
 
 p1.addProduct(product);
 
-console.log(p1.getProducts())
+console.log(p1.getProducts());
 
-p1.addProduct(product)
+p1.addProduct(product);
 
-p1.getProductById(2)
+p1.getProductById(2);

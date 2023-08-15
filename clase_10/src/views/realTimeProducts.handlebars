@@ -1,0 +1,55 @@
+<div class="real-time-products">
+    <h1>Productos en tiempo real (via websockets)</h1>
+    <form id="form-realTime">
+        <input type="text" name="title" id="title" placeholder="Titulo"/>
+        <input type="text" name="description" id="description"
+               placeholder="Descripción"/>
+        <input type="number" name="price" id="price" placeholder="Precio"/>
+        <input type="text" name="code" id="code" placeholder="Código"/>
+        <input type="stock" name="stock" id="stock" placeholder="Stock"/>
+        <input type="text" name="thumbnail" id="thumbnail"
+               placeholder="Thumbnail"/>
+        <input type="text" name="category" id="category"
+               placeholder="Categoría"/>
+        <button type="submit">Enviar</button>
+    </form>
+    <div class="products">
+        {{#if products}}
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Código</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Thumbnail</th>
+                    <th>Category</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                {{#each products}}
+                    <tr>
+                        <td>{{this.id}}</td>
+                        <td>{{this.title}}</td>
+                        <td>{{this.description}}</td>
+                        <td>{{this.price}}</td>
+                        <td>{{this.code}}</td>
+                        <td>{{this.stock}}</td>
+                        <td>{{this.status}}</td>
+                        <td>thumbnail</td>
+                        <td>{{this.status}}</td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        {{else}}
+            <p>No hay productos</p>
+        {{/if}}
+
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
